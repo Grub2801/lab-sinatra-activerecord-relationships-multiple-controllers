@@ -1,4 +1,5 @@
 class RecipeApp < Sinatra::Base
+  #route
   get "/" do
     redirect('/ingredients')
   end

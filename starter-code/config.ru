@@ -8,6 +8,7 @@ require "./models/recipe"
 
 require "./recipe_app"
 require "./ingredient_app"
+require "./course_app"
 
 use Rack::MethodOverride
 run RecipeApp

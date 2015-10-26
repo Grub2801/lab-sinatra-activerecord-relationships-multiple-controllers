@@ -1,0 +1,14 @@
+<h2>Edit course</h2>
+
+<form class="form course" id="edit-course" method="post" action="/courses/<%= @course.id %>">
+  <input type="hidden" name="_method" value="put">
+
+  <div class="form-group">
+    <label for="course[title]">Title:</label>
+    <input class="form-control" type="text" name="course[title]" id="course_title" value="<%= @course.title %>">
+  </div>
+
+  <div>
+    <input type="submit" class="btn" value="Add course">
+  </div>
+</form>
