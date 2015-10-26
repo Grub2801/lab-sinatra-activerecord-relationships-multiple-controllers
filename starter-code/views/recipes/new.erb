@@ -1,0 +1,23 @@
+<h2>New recipe</h2>
+
+<form class="form recipe" id="add-recipe" method="post" action="/recipes">
+
+  <div class="form-group">
+    <label for="recipe[title]">Title:</label>
+    <input class="form-control" type="text" name="recipe[title]" id="recipe_title">
+  </div>
+
+  <div class="form-group">
+    <label for="recipe[description]">Description:</label>
+    <input class="form-control" type="text" name="recipe[description]" id="recipe_description">
+  </div>
+
+  <div class="form-group">
+    <label for="recipe[servings]">Servings:</label>
+    <input class="form-control" type="data" name="recipe[servings]" id="recipe_servings">
+  </div>
+
+  <div>
+    <input type="submit" value="Add recipe" class="btn">
+  </div>
+</form>

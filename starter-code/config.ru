@@ -8,4 +8,5 @@ require "./models/recipe"
 
 require "./app"
 
+use Rack::MethodOverride
 run RecipeApp
