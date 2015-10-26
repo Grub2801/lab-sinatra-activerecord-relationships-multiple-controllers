@@ -1,0 +1,14 @@
+<h2>Edit Ingredient</h2>
+
+<form class="form ingredient" id="edit-ingredient" method="post" action="/ingredients/<%= @ingredient.id %>">
+  <input type="hidden" name="_method" value="put">
+
+  <div class="form-group">
+    <label for="ingredient[name]">Name:</label>
+    <input class="form-control" type="text" name="ingredient[name]" id="ingredient_name" value="<%= @ingredient.name %>">
+  </div>
+
+  <div>
+    <input type="submit" class="btn" value="Add ingredient">
+  </div>
+</form>
